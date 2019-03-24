@@ -25,9 +25,9 @@ public class ShapeClassifierBasisPath {
 
         assertEquals("Yes", shapeClassifier.evaluateGuess("Circle,Large,Yes,300,300")); // 5
 
-        assertEquals("Yes", shapeClassifier.evaluateGuess("Rectangle,Large,Yes,300,300,300,300")); // 6
+        assertEquals("Yes", shapeClassifier.evaluateGuess("Rectangle,Large,Yes,300,300,200,200")); //TODO 6 перепроверить
 
-        //assertEquals("Yes", shapeClassifier.evaluateGuess("Square,Large,Yes,300,300,300,300")); // 7 -- bug in classify4Parameters
+        assertEquals("Yes", shapeClassifier.evaluateGuess("Square,Large,Yes,300,300,300,300")); // 7 -- bug in classify4Parameters
 
         //assertEquals("Yes", shapeClassifier.evaluateGuess("Rectangle,Large,Yes,300,300,300")); // 8 -- infisible
 
