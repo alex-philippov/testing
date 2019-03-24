@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="group.assignment3.ShapeClassifierBasisPath" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-03-24T16:43:36" hostname="Mikhails-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testPath1" classname="group.assignment3.ShapeClassifierBasisPath" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
