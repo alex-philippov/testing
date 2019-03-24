@@ -3,14 +3,11 @@ package group.assignment3;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import java.security.Permission;
 
-import static org.hamcrest.Matchers.any;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
-import static org.mockito.ArgumentMatchers.anyString;
 
 public class ShapeClassifierTest {
     /*
@@ -78,30 +75,6 @@ public class ShapeClassifierTest {
     @Test
     public void testEquilateral() {
         assertEquals("No", shapeClassifier.evaluateGuess("Equilateral,Small,Yes,100,100,100"));
-    }
-
-    @Test
-    @Ignore
-    public void testFailedEllipse() {
-        assertEquals("No", shapeClassifier.evaluateGuess("Ellipse,Small,Yes,2,2"));
-    }
-
-    @Test
-    @Ignore
-    public void testFailedEquilateral() {
-        assertEquals("No", shapeClassifier.evaluateGuess("Equilateral,Small,Yes,2,2,2"));
-    }
-
-    @Test
-    @Ignore
-    public void testFailedEquilateralMockito() {
-        ShapeClassifier shapeClassifier = new ShapeClassifier();
-
-        ShapeClassifier spyShapeClassifier = Mockito.spy(shapeClassifier);
-
-        //Mockito.doReturn(null).when(spyShapeClassifier).getShapeGuess(anyString());
-
-        assertEquals("No", spyShapeClassifier.evaluateGuess("Equilateral,Small,Yes,2,2,2"));
     }
 
     @Test

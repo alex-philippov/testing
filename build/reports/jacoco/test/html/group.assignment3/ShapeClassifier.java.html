@@ -12,205 +12,216 @@ public class ShapeClassifier {
 
 	// return Yes if the guess is correct, No otherwise
 	public String evaluateGuess(String arg) {
-		//1
+
 <span class="fc" id="L16">		String shapeGuessResult = &quot;&quot;;</span>
 <span class="fc" id="L17">		Integer[] parameters = getParams(arg);</span>
 <span class="fc" id="L18">		String shapeGuess = getShapeGuess(arg);</span>
 <span class="fc" id="L19">		String sizeGuess = getSizeGuess(arg);</span>
 <span class="fc" id="L20">		String evenOddGuess = getEvenOddGuess(arg);</span>
 <span class="fc" id="L21">		int calcPerim = 0;</span>
-<span class="pc bpc" id="L22" title="1 of 2 branches missed.">		if (shapeGuess == null)//2</span>
-<span class="nc" id="L23">			shapeGuess = &quot;&quot;;//3</span>
-<span class="pc bpc" id="L24" title="1 of 2 branches missed.">		if (sizeGuess == null)//4</span>
-<span class="nc" id="L25">			sizeGuess = &quot;&quot;;//5</span>
-<span class="pc bpc" id="L26" title="1 of 2 branches missed.">		if (evenOddGuess == null)//6</span>
-<span class="nc" id="L27">			evenOddGuess = &quot;&quot;;//7</span>
-<span class="pc bpc" id="L28" title="4 of 5 branches missed.">		switch (parameters.length) {//8</span>
-			case 1:
-<span class="pc bpc" id="L30" title="1 of 2 branches missed.">				if (shapeGuess.equals(&quot;Line&quot;)) {//9</span>
-<span class="fc" id="L31">					shapeGuessResult = shapeGuess;//13</span>
-<span class="fc" id="L32">					calcPerim = parameters[0];</span>
-				}
-				break;
-			case 2:
-<span class="nc" id="L36">				shapeGuessResult = classify2Parameters(parameters[1], parameters[1]);//10</span>
-<span class="nc bnc" id="L37" title="All 2 branches missed.">				if (shapeGuessResult.equals(&quot;Ellipse&quot;)) {//14</span>
-<span class="nc" id="L38">					calcPerim = calculateEllipsePerimeter(parameters[0],parameters[1]);//16</span>
-				}
-				else {
-<span class="nc" id="L41">					calcPerim = calculateCirclePerimeter(parameters[0]);//17</span>
-				}
-<span class="nc" id="L43">				break;</span>
-			case 3:
-<span class="nc" id="L45">				shapeGuessResult = classify3Parameters(parameters[0], parameters[1],parameters[2]);//11</span>
-<span class="nc" id="L46">				calcPerim = calculateTrianglePerimeter(parameters[1], parameters[1],parameters[2]);</span>
-<span class="nc" id="L47">				break;</span>
-			case 4:
-<span class="nc" id="L49">				shapeGuessResult = classify4Parameters(parameters[0], parameters[1],parameters[2], parameters[3]);//12</span>
-<span class="nc bnc" id="L50" title="All 2 branches missed.">				if (shapeGuessResult.equals(&quot;Rectangle&quot;)) {//15</span>
-<span class="nc" id="L51">					calcPerim = calculateRectanglePerimeter(parameters[0], parameters[3],parameters[2], parameters[3]);//18</span>
-				}
-				else {
-<span class="nc" id="L54">					calcPerim = calculateRectanglePerimeter(parameters[0], parameters[1],parameters[2], parameters[3]);//19</span>
-				}
+
+<span class="pc bpc" id="L23" title="1 of 2 branches missed.">		if (shapeGuess == null)</span>
+<span class="nc" id="L24">			shapeGuess = &quot;&quot;;</span>
+
+<span class="pc bpc" id="L26" title="1 of 2 branches missed.">		if (sizeGuess == null)</span>
+<span class="nc" id="L27">			sizeGuess = &quot;&quot;;</span>
+
+<span class="pc bpc" id="L29" title="1 of 2 branches missed.">		if (evenOddGuess == null)</span>
+<span class="nc" id="L30">			evenOddGuess = &quot;&quot;;</span>
+
+
+<span class="pc bpc" id="L33" title="1 of 5 branches missed.">		switch (parameters.length) {</span>
+		case 1:
+<span class="fc bfc" id="L35" title="All 2 branches covered.">			if (shapeGuess.equals(&quot;Line&quot;)) {</span>
+<span class="fc" id="L36">				shapeGuessResult = shapeGuess;</span>
+<span class="fc" id="L37">				calcPerim = parameters[0];</span>
+			}
+			break; 
+		case 2: 
+<span class="fc" id="L41">			shapeGuessResult = classify2Parameters(parameters[1], parameters[1]);</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">			if (shapeGuessResult.equals(&quot;Ellipse&quot;)) {</span>
+<span class="nc" id="L43">				calcPerim = calculateEllipsePerimeter(parameters[0],parameters[1]);</span>
+			}
+			else {
+<span class="fc" id="L46">				calcPerim = calculateCirclePerimeter(parameters[0]);</span>
+			}
+<span class="fc" id="L48">			break;</span>
+		case 3:
+<span class="fc" id="L50">			shapeGuessResult = classify3Parameters(parameters[0], parameters[1],parameters[2]);</span>
+<span class="fc" id="L51">			calcPerim = calculateTrianglePerimeter(parameters[1], parameters[1],parameters[2]);</span>
+<span class="fc" id="L52">			break;</span>
+		case 4:
+<span class="fc" id="L54">			shapeGuessResult = classify4Parameters(parameters[0], parameters[1],parameters[2], parameters[3]);</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">			if (shapeGuessResult.equals(&quot;Rectangle&quot;)) {</span>
+<span class="fc" id="L56">				calcPerim = calculateRectanglePerimeter(parameters[0], parameters[3],parameters[2], parameters[3]);</span>
+			}
+			else {
+<span class="fc" id="L59">				calcPerim = calculateRectanglePerimeter(parameters[0], parameters[1],parameters[2], parameters[3]);</span>
+			}
 		}
-<span class="fc" id="L57">		Boolean isShapeGuessCorrect = null;//20</span>
-<span class="fc" id="L58">		Boolean isSizeGuessCorrect = null;</span>
-<span class="fc" id="L59">		Boolean isEvenOddCorrect = null;</span>
+
+<span class="fc" id="L63">		Boolean isShapeGuessCorrect = null;</span>
+<span class="fc" id="L64">		Boolean isSizeGuessCorrect = null;</span>
+<span class="fc" id="L65">		Boolean isEvenOddCorrect = null;</span>
+
 		// check the shape guess
-<span class="pc bpc" id="L61" title="1 of 2 branches missed.">		if (shapeGuessResult.equals(shapeGuess))//21</span>
-<span class="fc" id="L62">			isShapeGuessCorrect = true;//22</span>
-		else
-<span class="nc" id="L64">			isShapeGuessCorrect = false;//23</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">		if (shapeGuessResult.equals(shapeGuess))</span>
+<span class="fc" id="L69">			isShapeGuessCorrect = true;</span>
+		else 
+<span class="fc" id="L71">			isShapeGuessCorrect = false;</span>
+
 		// check the size guess
-<span class="pc bpc" id="L66" title="2 of 4 branches missed.">		if (calcPerim &gt; 200 &amp;&amp; sizeGuess.equals(&quot;Large&quot;)) {//24</span>
-<span class="fc" id="L67">			isSizeGuessCorrect = true;//26</span>
+
+<span class="fc bfc" id="L75" title="All 4 branches covered.">		if (calcPerim &gt; 200 &amp;&amp; sizeGuess.equals(&quot;Large&quot;)) {</span>
+<span class="fc" id="L76">			isSizeGuessCorrect = true;</span>
 		}
-<span class="nc bnc" id="L69" title="All 4 branches missed.">		else if (calcPerim &lt; 10 &amp;&amp; sizeGuess.equals(&quot;Small&quot;)) {//25</span>
-<span class="nc" id="L70">			isSizeGuessCorrect = true;//26</span>
+<span class="fc bfc" id="L78" title="All 4 branches covered.">		else if (calcPerim &lt; 10 &amp;&amp; sizeGuess.equals(&quot;Small&quot;)) {</span>
+<span class="fc" id="L79">			isSizeGuessCorrect = true;	</span>
 		}
-		else {
-<span class="nc" id="L73">			isSizeGuessCorrect = false;//27</span>
+		else { 
+<span class="fc" id="L82">			isSizeGuessCorrect = false;</span>
 		}
-<span class="pc bpc" id="L75" title="2 of 4 branches missed.">		if ( 0 == (calcPerim % 2) &amp;&amp; evenOddGuess.equals(&quot;Yes&quot;)) {//28</span>
-<span class="fc" id="L76">			isEvenOddCorrect = true;//30</span>
+
+<span class="fc bfc" id="L85" title="All 4 branches covered.">		if ( 0 == (calcPerim % 2) &amp;&amp; evenOddGuess.equals(&quot;Yes&quot;)) {</span>
+<span class="fc" id="L86">			isEvenOddCorrect = true;</span>
 		}
-<span class="nc bnc" id="L78" title="All 4 branches missed.">		else if ( 0 != (calcPerim % 2) &amp;&amp; evenOddGuess.equals(&quot;No&quot;)) {//29</span>
-<span class="nc" id="L79">			isEvenOddCorrect = true;//30</span>
+<span class="fc bfc" id="L88" title="All 4 branches covered.">		else if ( 0 != (calcPerim % 2) &amp;&amp; evenOddGuess.equals(&quot;No&quot;)) {</span>
+<span class="fc" id="L89">			isEvenOddCorrect = true;</span>
 		}
-		else {
-<span class="nc" id="L82">			isEvenOddCorrect = false;//31</span>
+		else { 
+<span class="fc" id="L92">			isEvenOddCorrect = false;</span>
 		}
-<span class="pc bpc" id="L84" title="3 of 6 branches missed.">		if (isShapeGuessCorrect &amp;&amp; isSizeGuessCorrect &amp;&amp; isEvenOddCorrect) {//32</span>
-<span class="fc" id="L85">			badGuesses=0;</span>
-<span class="fc" id="L86">			return &quot;Yes&quot;;//33</span>
+
+<span class="fc bfc" id="L95" title="All 6 branches covered.">		if (isShapeGuessCorrect &amp;&amp; isSizeGuessCorrect &amp;&amp; isEvenOddCorrect) {</span>
+<span class="fc" id="L96">			badGuesses=0;</span>
+<span class="fc" id="L97">			return &quot;Yes&quot;;</span>
 		}
 		else {
 			// too many bad guesses
-<span class="nc" id="L90">			badGuesses++;//34</span>
-<span class="nc bnc" id="L91" title="All 2 branches missed.">			if (badGuesses &gt;= 3) {//35</span>
-<span class="nc" id="L92">				System.out.println(&quot;Bad guess limit Exceeded&quot;);</span>
-<span class="nc" id="L93">				System.exit(1);//36</span>
+<span class="fc" id="L101">			badGuesses++;</span>
+<span class="fc bfc" id="L102" title="All 2 branches covered.">			if (badGuesses &gt;= 3) {</span>
+<span class="fc" id="L103">				System.out.println(&quot;Bad guess limit Exceeded&quot;);</span>
+<span class="nc" id="L104">				System.exit(1);</span>
 			}
-<span class="nc" id="L95">			return &quot;No&quot;;//37</span>
+<span class="fc" id="L106">			return &quot;No&quot;;</span>
 		}
 	}
 
 	// P = 2 * PI *r
 	private int calculateCirclePerimeter(int r) {
-<span class="nc" id="L101">		return (int) (2 * Math.PI * r);</span>
+<span class="fc" id="L112">		return (int) (2 * Math.PI * r);</span>
 	}
 
 	// P = 4 * s
 	private int calculateSquarePerimeter(int side) {
-<span class="nc" id="L106">		return 4 * side;</span>
+<span class="nc" id="L117">		return 4 * side;</span>
 	}
 
 	// P = 2l + 2w)
 	private int calculateRectanglePerimeter(int side1, int side2, int side3, int side4) {
-<span class="nc bnc" id="L111" title="All 2 branches missed.">		if (side1 == side2) {</span>
+<span class="pc bpc" id="L122" title="1 of 2 branches missed.">		if (side1 == side2) {</span>
 
-<span class="nc" id="L113">			return (2 * side1) + (2 * side3);</span>
+<span class="fc" id="L124">			return (2 * side1) + (2 * side3);</span>
 		} 
 
-<span class="nc bnc" id="L116" title="All 2 branches missed.">		else if (side2 == side3) {</span>
-<span class="nc" id="L117">			return (2 * side1) + (2 * side2);</span>
+<span class="nc bnc" id="L127" title="All 2 branches missed.">		else if (side2 == side3) {</span>
+<span class="nc" id="L128">			return (2 * side1) + (2 * side2);</span>
 		}
 
-<span class="nc" id="L120">		return 0;</span>
+<span class="nc" id="L131">		return 0;</span>
 	}
 
 	// P = a + b + c
 	private int calculateTrianglePerimeter(int side1, int side2 , int side3) {
-<span class="nc" id="L125">		return side1 + side2 + side3;</span>
+<span class="fc" id="L136">		return side1 + side2 + side3;</span>
 	}
 
 	// This is an approximation
 	// PI(3(a+b) - sqrt((3a+b)(a+3b))
 	private int calculateEllipsePerimeter(int a, int b) {
-<span class="nc" id="L131">		double da = a, db = b;</span>
-<span class="nc" id="L132">		return (int) ((int) Math.PI * (3 * (da+db) - Math.sqrt((3*da+db)*(da+3*db)))); </span>
+<span class="nc" id="L142">		double da = a, db = b;</span>
+<span class="nc" id="L143">		return (int) ((int) Math.PI * (3 * (da+db) - Math.sqrt((3*da+db)*(da+3*db)))); </span>
 	}
 
 	// Transform a string argument into an array of numbers
 	private Integer[] getParams(String args) {
-<span class="fc" id="L137">		String[] params = args.split(&quot;,&quot;);</span>
-<span class="fc" id="L138">		Integer[] numParams = null;</span>
+<span class="fc" id="L148">		String[] params = args.split(&quot;,&quot;);</span>
+<span class="fc" id="L149">		Integer[] numParams = null;</span>
 
-<span class="fc" id="L140">		numParams = new Integer[params.length-3];</span>
-<span class="fc bfc" id="L141" title="All 2 branches covered.">		for (int i=3; i&lt;params.length; i++) {</span>
-<span class="fc" id="L142">			numParams[i-3] = Integer.parseInt(params[i]);</span>
+<span class="fc" id="L151">		numParams = new Integer[params.length-3];</span>
+<span class="fc bfc" id="L152" title="All 2 branches covered.">		for (int i=3; i&lt;params.length; i++) {</span>
+<span class="fc" id="L153">			numParams[i-3] = Integer.parseInt(params[i]);</span>
 		}
-<span class="fc" id="L144">		return numParams;		</span>
+<span class="fc" id="L155">		return numParams;		</span>
 	}
 
 	// extract the Even/Odd guess
 	private String getEvenOddGuess(String args) {
-<span class="fc" id="L149">		String[] params = args.split(&quot;,&quot;);</span>
-<span class="fc" id="L150">		return params[2];		</span>
+<span class="fc" id="L160">		String[] params = args.split(&quot;,&quot;);</span>
+<span class="fc" id="L161">		return params[2];		</span>
 	}
 
 	// extract the size guess
 	private String getSizeGuess(String args) {
-<span class="fc" id="L155">		String[] params = args.split(&quot;,&quot;);</span>
-<span class="fc" id="L156">		return params[1];		</span>
+<span class="fc" id="L166">		String[] params = args.split(&quot;,&quot;);</span>
+<span class="fc" id="L167">		return params[1];		</span>
 	}
 
 	// extract the shape guess 
 	private String getShapeGuess(String args) {
-<span class="fc" id="L161">		String[] params = args.split(&quot;,&quot;);</span>
-<span class="fc" id="L162">		return params[0];</span>
+<span class="fc" id="L172">		String[] params = args.split(&quot;,&quot;);</span>
+<span class="fc" id="L173">		return params[0];</span>
 	}
 
 	// classify an two sides 
 	private String classify2Parameters(int a, int b) {
-<span class="nc bnc" id="L167" title="All 2 branches missed.">		if (a == b) {</span>
-<span class="nc" id="L168">			return twoParamGuesses[0];</span>
+<span class="pc bpc" id="L178" title="1 of 2 branches missed.">		if (a == b) {</span>
+<span class="fc" id="L179">			return twoParamGuesses[0];</span>
 		}
-<span class="nc bnc" id="L170" title="All 2 branches missed.">		else if (a == 0) {</span>
-<span class="nc bnc" id="L171" title="All 2 branches missed.">			if (b &gt; 0) {</span>
-<span class="nc" id="L172">				return twoParamGuesses[1];</span>
+<span class="nc bnc" id="L181" title="All 2 branches missed.">		else if (a == 0) {</span>
+<span class="nc bnc" id="L182" title="All 2 branches missed.">			if (b &gt; 0) {</span>
+<span class="nc" id="L183">				return twoParamGuesses[1];</span>
 			}
 		}
-<span class="nc bnc" id="L175" title="All 2 branches missed.">		else if (a &gt; 1) {</span>
-<span class="nc bnc" id="L176" title="All 2 branches missed.">			if (b != 0) {</span>
-<span class="nc" id="L177">				return twoParamGuesses[1]; </span>
+<span class="nc bnc" id="L186" title="All 2 branches missed.">		else if (a &gt; 1) {</span>
+<span class="nc bnc" id="L187" title="All 2 branches missed.">			if (b != 0) {</span>
+<span class="nc" id="L188">				return twoParamGuesses[1]; </span>
 			}
 		}
-<span class="nc" id="L180">		return &quot;&quot;;</span>
+<span class="nc" id="L191">		return &quot;&quot;;</span>
 	}
 
 	// Classify four sides
 	private String classify4Parameters(int a, int b, int c, int d) {
-<span class="nc bnc" id="L185" title="All 4 branches missed.">		if (a == b &amp;&amp; c == d) {</span>
-<span class="nc bnc" id="L186" title="All 2 branches missed.">			if (a != c) {</span>
-<span class="nc" id="L187">				return fourParamGuesses[1];</span>
+<span class="pc bpc" id="L196" title="1 of 4 branches missed.">		if (a == b &amp;&amp; c == d) {</span>
+<span class="pc bpc" id="L197" title="1 of 2 branches missed.">			if (a != c) {</span>
+<span class="fc" id="L198">				return fourParamGuesses[1];</span>
 			}
 			else 
-<span class="nc" id="L190">				return fourParamGuesses[0];</span>
+<span class="nc" id="L201">				return fourParamGuesses[0];</span>
 		}		
-<span class="nc bnc" id="L192" title="All 4 branches missed.">		else if (b == d &amp;&amp; c == a) {</span>
-<span class="nc" id="L193">			return fourParamGuesses[0];</span>
+<span class="pc bpc" id="L203" title="3 of 4 branches missed.">		else if (b == d &amp;&amp; c == a) {</span>
+<span class="nc" id="L204">			return fourParamGuesses[0];</span>
 		}
-<span class="nc bnc" id="L195" title="All 4 branches missed.">		else if (b == c &amp;&amp; a == d) {</span>
-<span class="nc" id="L196">			return fourParamGuesses[0];</span>
+<span class="pc bpc" id="L206" title="2 of 4 branches missed.">		else if (b == c &amp;&amp; a == d) {</span>
+<span class="fc" id="L207">			return fourParamGuesses[0];</span>
 		}
-<span class="nc" id="L198">		return  &quot;&quot;;</span>
+<span class="nc" id="L209">		return  &quot;&quot;;</span>
 	}
 
 	// Classify a triangle based on the length of its sides
 	private String classify3Parameters(int a, int b, int c) {
 
-<span class="nc bnc" id="L204" title="All 6 branches missed.">		if ( (a &lt; (b+c)) &amp;&amp; (b &lt; (a + c)) &amp;&amp; (c &lt; (a+b))) {</span>
-<span class="nc bnc" id="L205" title="All 4 branches missed.">			if (a == b &amp;&amp; b == c) {</span>
-<span class="nc" id="L206">				return threeParamGuesses[0]; // Equilateral</span>
-<span class="nc bnc" id="L207" title="All 6 branches missed.">			} else if (a!=b &amp;&amp; a!=c &amp;&amp; b!=c) {</span>
-<span class="nc" id="L208">				return threeParamGuesses[2]; // Scalene</span>
+<span class="pc bpc" id="L215" title="3 of 6 branches missed.">		if ( (a &lt; (b+c)) &amp;&amp; (b &lt; (a + c)) &amp;&amp; (c &lt; (a+b))) {</span>
+<span class="pc bpc" id="L216" title="2 of 4 branches missed.">			if (a == b &amp;&amp; b == c) {</span>
+<span class="fc" id="L217">				return threeParamGuesses[0]; // Equilateral</span>
+<span class="nc bnc" id="L218" title="All 6 branches missed.">			} else if (a!=b &amp;&amp; a!=c &amp;&amp; b!=c) {</span>
+<span class="nc" id="L219">				return threeParamGuesses[2]; // Scalene</span>
 			} else {
-<span class="nc" id="L210">				return threeParamGuesses[1]; // Isosceles</span>
+<span class="nc" id="L221">				return threeParamGuesses[1]; // Isosceles</span>
 			}  
 		}
-<span class="nc" id="L213">		return &quot;&quot;;</span>
+<span class="nc" id="L224">		return &quot;&quot;;</span>
 	}
 }
 

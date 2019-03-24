@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="group.assignment3.ShapeClassifierTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-03-24T13:02:44" hostname="Mikhails-MacBook-Pro.local" time="0.02">
+  <properties/>
+  <testcase name="testEllipse" classname="group.assignment3.ShapeClassifierTest" time="0.002"/>
+  <testcase name="testExit" classname="group.assignment3.ShapeClassifierTest" time="0.017"/>
+  <testcase name="testLine" classname="group.assignment3.ShapeClassifierTest" time="0.0"/>
+  <testcase name="testEquilateral" classname="group.assignment3.ShapeClassifierTest" time="0.0"/>
+  <testcase name="testDefaults" classname="group.assignment3.ShapeClassifierTest" time="0.0"/>
+  <testcase name="testRectangle" classname="group.assignment3.ShapeClassifierTest" time="0.0"/>
+  <system-out><![CDATA[Bad guess limit Exceeded
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

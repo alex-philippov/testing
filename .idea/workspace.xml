@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/group/assignment3/ShapeClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+            <state relative-caret-position="1230">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -30,55 +30,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="77" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBasisPath.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="187">
+              <caret line="71" column="61" lean-forward="true" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest2Wise.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest1Wise.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="83" column="5" selection-start-line="66" selection-start-column="4" selection-end-line="83" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest3Wise.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2538#2539#0" expanded="true" />
+                <element signature="e#2627#2628#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,26 +63,18 @@
     <findStrings>
       <find>main</find>
       <find>ShapeClassifier</find>
+      <find>Equilateral</find>
       <find>Parameters</find>
       <find>24</find>
       <find>calculateRectanglePerimeter</find>
+      <find>getShapeGuess</find>
       <find>getParams</find>
       <find>twoParamGuesses</find>
+      <find>classify2Parameters</find>
       <find>fourParamGuesses</find>
       <find>assertThat</find>
       <find>classify4Parameters</find>
-      <find>addcs</find>
-      <find>sbTestResults</find>
-      <find>even</find>
-      <find>Equa</find>
-      <find>Equilateral</find>
-      <find>classify3Parameters</find>
-      <find>classify2Parameters</find>
-      <find>getShapeGuess</find>
     </findStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -124,14 +82,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ShapeClassifier.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShapeClassifierTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/group/ShapeClassifier.java" />
-        <option value="$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest1Wise.java" />
-        <option value="$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest2Wise.java" />
-        <option value="$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest3Wise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/group/assignment3/ShapeClassifier.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/group/assignment3/ShapeClassifier.java" />
-        <option value="$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBasisPath.java" />
       </list>
     </option>
   </component>
@@ -139,12 +92,13 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,14 +157,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553447328188" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553433380129" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -232,39 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShapeClassifierBasisPath">
-    <configuration name="ShapeClassifierBasisPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="group.assignment3.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="group.assignment3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="group.assignment3" />
-      <option name="MAIN_CLASS_NAME" value="group.assignment3.ShapeClassifierBasisPath" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShapeClassifierBlackBoxTest2Wise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="group.assignment3.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="group.assignment3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="group.assignment3" />
-      <option name="MAIN_CLASS_NAME" value="group.assignment3.ShapeClassifierBlackBoxTest2Wise" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="ShapeClassifierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="group.assignment3.test" />
       <extension name="recording" autostart="true">
@@ -281,27 +201,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="all" type="JUnit" factoryName="JUnit">
-      <module name="group.assignment3.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="JUnit.all" />
-      <item itemvalue="JUnit.ShapeClassifierBlackBoxTest2Wise" />
-      <item itemvalue="JUnit.ShapeClassifierTest" />
-      <item itemvalue="JUnit.ShapeClassifierBasisPath" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShapeClassifierBasisPath" />
-        <item itemvalue="JUnit.ShapeClassifierBlackBoxTest2Wise" />
         <item itemvalue="JUnit.ShapeClassifierTest" />
       </list>
     </recent_temporary>
@@ -320,50 +221,50 @@
       <workItem from="1553352329013" duration="1265000" />
       <workItem from="1553356947229" duration="3050000" />
       <workItem from="1553361056121" duration="6427000" />
-      <workItem from="1553432535893" duration="8682000" />
-      <workItem from="1553447442067" duration="264000" />
+      <workItem from="1553432535893" duration="365000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="all - 2019.03.24 at 18h 58m 13s.xml">
-      <configuration name="all" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 22h 16m 31s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="all - 2019.03.24 at 18h 58m 19s.xml">
-      <configuration name="all" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 22h 17m 11s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="all - 2019.03.24 at 19h 00m 21s.xml">
-      <configuration name="all" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 22h 18m 17s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="all - 2019.03.24 at 19h 04m 24s.xml">
-      <configuration name="all" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 22h 18m 52s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="all - 2019.03.24 at 19h 12m 00s.xml">
-      <configuration name="all" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 22h 38m 32s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="all - 2019.03.24 at 19h 15m 37s.xml">
-      <configuration name="all" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 22h 41m 57s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="all - 2019.03.24 at 19h 16m 42s.xml">
-      <configuration name="all" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 22h 57m 42s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="all - 2019.03.24 at 19h 16m 55s.xml">
-      <configuration name="all" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 23h 02m 11s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShapeClassifierBasisPath - 2019.03.24 at 19h 34m 52s.xml">
-      <configuration name="ShapeClassifierBasisPath" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 23h 04m 32s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShapeClassifierBasisPath - 2019.03.24 at 19h 43m 19s.xml">
-      <configuration name="ShapeClassifierBasisPath" configurationId="JUnit" />
+    <history-entry file="ShapeClassifierTest - 2019.03.23 at 23h 04m 57s.xml">
+      <configuration name="ShapeClassifierTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21038000" />
+    <option name="totallyTimeSpent" value="12457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -378,7 +279,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.57710844" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -399,6 +300,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/group/assignment3/ShapeClassifier.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -424,70 +337,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2538#2539#0" expanded="true" />
-            <element signature="e#2627#2628#0" expanded="true" />
-            <element signature="e#2822#2823#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/group/assignment3/ShapeClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+        <state relative-caret-position="1230">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="77" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBasisPath.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="187">
+          <caret line="71" column="61" lean-forward="true" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest2Wise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest1Wise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="83" column="5" selection-start-line="66" selection-start-column="4" selection-end-line="83" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/group/assignment3/ShapeClassifierBlackBoxTest3Wise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2538#2539#0" expanded="true" />
+            <element signature="e#2627#2628#0" expanded="true" />
           </folding>
         </state>
       </provider>

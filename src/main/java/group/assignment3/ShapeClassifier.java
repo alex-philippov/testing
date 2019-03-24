@@ -12,87 +12,98 @@ public class ShapeClassifier {
 
 	// return Yes if the guess is correct, No otherwise
 	public String evaluateGuess(String arg) {
-		//1
+
 		String shapeGuessResult = "";
 		Integer[] parameters = getParams(arg);
 		String shapeGuess = getShapeGuess(arg);
 		String sizeGuess = getSizeGuess(arg);
 		String evenOddGuess = getEvenOddGuess(arg);
 		int calcPerim = 0;
-		if (shapeGuess == null)//2
-			shapeGuess = "";//3
-		if (sizeGuess == null)//4
-			sizeGuess = "";//5
-		if (evenOddGuess == null)//6
-			evenOddGuess = "";//7
-		switch (parameters.length) {//8
-			case 1:
-				if (shapeGuess.equals("Line")) {//9
-					shapeGuessResult = shapeGuess;//13
-					calcPerim = parameters[0];
-				}
-				break;
-			case 2:
-				shapeGuessResult = classify2Parameters(parameters[1], parameters[1]);//10
-				if (shapeGuessResult.equals("Ellipse")) {//14
-					calcPerim = calculateEllipsePerimeter(parameters[0],parameters[1]);//16
-				}
-				else {
-					calcPerim = calculateCirclePerimeter(parameters[0]);//17
-				}
-				break;
-			case 3:
-				shapeGuessResult = classify3Parameters(parameters[0], parameters[1],parameters[2]);//11
-				calcPerim = calculateTrianglePerimeter(parameters[1], parameters[1],parameters[2]);
-				break;
-			case 4:
-				shapeGuessResult = classify4Parameters(parameters[0], parameters[1],parameters[2], parameters[3]);//12
-				if (shapeGuessResult.equals("Rectangle")) {//15
-					calcPerim = calculateRectanglePerimeter(parameters[0], parameters[3],parameters[2], parameters[3]);//18
-				}
-				else {
-					calcPerim = calculateRectanglePerimeter(parameters[0], parameters[1],parameters[2], parameters[3]);//19
-				}
+
+		if (shapeGuess == null)
+			shapeGuess = "";
+
+		if (sizeGuess == null)
+			sizeGuess = "";
+
+		if (evenOddGuess == null)
+			evenOddGuess = "";
+
+
+		switch (parameters.length) {
+		case 1:
+			if (shapeGuess.equals("Line")) {
+				shapeGuessResult = shapeGuess;
+				calcPerim = parameters[0];
+			}
+			break; 
+		case 2: 
+			shapeGuessResult = classify2Parameters(parameters[1], parameters[1]);
+			if (shapeGuessResult.equals("Ellipse")) {
+				calcPerim = calculateEllipsePerimeter(parameters[0],parameters[1]);
+			}
+			else {
+				calcPerim = calculateCirclePerimeter(parameters[0]);
+			}
+			break;
+		case 3:
+			shapeGuessResult = classify3Parameters(parameters[0], parameters[1],parameters[2]);
+			calcPerim = calculateTrianglePerimeter(parameters[1], parameters[1],parameters[2]);
+			break;
+		case 4:
+			shapeGuessResult = classify4Parameters(parameters[0], parameters[1],parameters[2], parameters[3]);
+			if (shapeGuessResult.equals("Rectangle")) {
+				calcPerim = calculateRectanglePerimeter(parameters[0], parameters[3],parameters[2], parameters[3]);
+			}
+			else {
+				calcPerim = calculateRectanglePerimeter(parameters[0], parameters[1],parameters[2], parameters[3]);
+			}
 		}
-		Boolean isShapeGuessCorrect = null;//20
+
+		Boolean isShapeGuessCorrect = null;
 		Boolean isSizeGuessCorrect = null;
 		Boolean isEvenOddCorrect = null;
+
 		// check the shape guess
-		if (shapeGuessResult.equals(shapeGuess))//21
-			isShapeGuessCorrect = true;//22
-		else
-			isShapeGuessCorrect = false;//23
+		if (shapeGuessResult.equals(shapeGuess))
+			isShapeGuessCorrect = true;
+		else 
+			isShapeGuessCorrect = false;
+
 		// check the size guess
-		if (calcPerim > 200 && sizeGuess.equals("Large")) {//24
-			isSizeGuessCorrect = true;//26
+
+		if (calcPerim > 200 && sizeGuess.equals("Large")) {
+			isSizeGuessCorrect = true;
 		}
-		else if (calcPerim < 10 && sizeGuess.equals("Small")) {//25
-			isSizeGuessCorrect = true;//26
+		else if (calcPerim < 10 && sizeGuess.equals("Small")) {
+			isSizeGuessCorrect = true;	
 		}
-		else {
-			isSizeGuessCorrect = false;//27
+		else { 
+			isSizeGuessCorrect = false;
 		}
-		if ( 0 == (calcPerim % 2) && evenOddGuess.equals("Yes")) {//28
-			isEvenOddCorrect = true;//30
+
+		if ( 0 == (calcPerim % 2) && evenOddGuess.equals("Yes")) {
+			isEvenOddCorrect = true;
 		}
-		else if ( 0 != (calcPerim % 2) && evenOddGuess.equals("No")) {//29
-			isEvenOddCorrect = true;//30
+		else if ( 0 != (calcPerim % 2) && evenOddGuess.equals("No")) {
+			isEvenOddCorrect = true;
 		}
-		else {
-			isEvenOddCorrect = false;//31
+		else { 
+			isEvenOddCorrect = false;
 		}
-		if (isShapeGuessCorrect && isSizeGuessCorrect && isEvenOddCorrect) {//32
+
+		if (isShapeGuessCorrect && isSizeGuessCorrect && isEvenOddCorrect) {
 			badGuesses=0;
-			return "Yes";//33
+			return "Yes";
 		}
 		else {
 			// too many bad guesses
-			badGuesses++;//34
-			if (badGuesses >= 3) {//35
+			badGuesses++;
+			if (badGuesses >= 3) {
 				System.out.println("Bad guess limit Exceeded");
-				System.exit(1);//36
+				System.exit(1);
 			}
-			return "No";//37
+			return "No";
 		}
 	}
 
