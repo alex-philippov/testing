@@ -1,0 +1,9 @@
+
+Gsquid:S1066»"/Merge this if statement with the enclosing one.(¼ãÌÏ
+Bsquid:S1172y",Remove this unused method parameter "side4".(·ò„8
+O
+squid:S106g"9Replace this use of System.out or System.err by a logger.(¬†Ë¦
+8squid:S1659" Declare "db" on a separate line.(±î‚ñ
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(É¸Ë¸üÿÿÿÿ
+U"squid:SwitchLastCaseIsDefaultCheck!""Add a default case to this switch.(äÔ»øÿÿÿÿ
+gsquid:UnusedPrivateMethodt"=Remove this unused private "calculateSquarePerimeter" method.(ï¡£íıÿÿÿÿ
