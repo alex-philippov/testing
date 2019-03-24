@@ -37,8 +37,9 @@ public class ShapeClassifier {
 				calcPerim = parameters[0];
 			}
 			break; 
-		case 2: 
-			shapeGuessResult = classify2Parameters(parameters[1], parameters[1]);
+		case 2:
+
+			shapeGuessResult = classify2Parameters(parameters[1], parameters[0]);
 			if (shapeGuessResult.equals("Ellipse")) {
 				calcPerim = calculateEllipsePerimeter(parameters[0],parameters[1]);
 			}
@@ -139,7 +140,7 @@ public class ShapeClassifier {
 	// This is an approximation
 	// PI(3(a+b) - sqrt((3a+b)(a+3b))
 	private int calculateEllipsePerimeter(int a, int b) {
-		double da = a, db = b;
+		double da = a/2, db = b/2;
 		return (int) ((int) Math.PI * (3 * (da+db) - Math.sqrt((3*da+db)*(da+3*db)))); 
 	}
 

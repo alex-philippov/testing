@@ -14,7 +14,7 @@ Circle, Small, true,2,4095,0,0,0
 Circle, Large, true,2,4095,2,2,0
 Circle, Large, true,4095,4095,4095,4095,0
 Ellipse, Large, false,4095,0,0,0,0
-Ellipse, Small, true,2,2,0,0,1
+Ellipse, Small, true,2,2,0,0,0
 Ellipse, Large, false,2,2,2,2,0
 Ellipse, Large, false,4095,2,4095,4095,0
 Ellipse, Small, false,4095,4095,0,0,0
