@@ -23,7 +23,7 @@ public class ShapeClassifierBlackBoxTest2Wise {
 
     @org.junit.Test
     @FileParameters(
-            value = "/Users/mikhail/Documents/workspace/2wise.csv",
+            value = "./2wise.csv",
             mapper = CsvWithHeaderMapper.class)
     public void test(
             String Shape,
@@ -88,7 +88,7 @@ public class ShapeClassifierBlackBoxTest2Wise {
     @AfterClass
     public static void exportCsvResult() throws IOException {
         BufferedWriter resultWriter = Files.newBufferedWriter(
-                Paths.get("/Users/mikhail/Documents/workspace/2wise_Results.csv"),
+                Paths.get("./2wise_Results.csv"),
                 Charset.defaultCharset());
         resultWriter.write("Shape, Size, Even, Side1, Side2, Side3, Side4, Result, TestResult");
         resultWriter.newLine();

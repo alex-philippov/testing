@@ -1,0 +1,9 @@
+Shape, Size, Even, Side1, Side2, Side3, Side4 ,Result
+Line, Small, false,4095,0,0,0,0
+Circle, Large, false,2,4095,4095,4095,0
+Ellipse, Small, false,2,2,2,2,0
+Equilateral, Small, false,4095,0,0,0,0
+Isosceles, Small, true,4095,0,0,0,0
+Scalene, Small, true,4095,0,0,0,0
+Square, Small, true,4095,0,0,0,0
+Rectangle, Small, true,4095,0,0,0,0

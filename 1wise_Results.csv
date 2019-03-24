@@ -1,0 +1,9 @@
+Shape, Size, Even, Side1, Side2, Side3, Side4, Result, TestResult
+Line,Small,false,4095,0,0,0,0, Passed
+Circle,Large,false,2,4095,4095,4095,0, Passed
+Ellipse,Small,false,2,2,2,2,0, Passed
+Equilateral,Small,false,4095,0,0,0,0, Passed
+Isosceles,Small,true,4095,0,0,0,0, Passed
+Scalene,Small,true,4095,0,0,0,0, Passed
+Square,Small,true,4095,0,0,0,0, Passed
+Rectangle,Small,true,4095,0,0,0,0, Passed
