@@ -45,7 +45,7 @@ public class ShapeClassifierBasisPath {
 
         SecurityManager initialSecurityManger = System.getSecurityManager();
         try {
-            System.setSecurityManager(new ShapeClassifierTest.NoExitSecurityManager());
+            System.setSecurityManager(new ShapeClassifierBasisPath.NoExitSecurityManager());
 
             assertEquals("No", shapeClassifier.evaluateGuess("Isosceles,Large,Yes,2,2,3")); // 13
 
@@ -54,7 +54,7 @@ public class ShapeClassifierBasisPath {
             assertEquals("No", shapeClassifier.evaluateGuess("Isosceles,Large,Yes,2,2,3")); // 13
 
             fail("Should've thrown ExitException");
-        } catch (ShapeClassifierTest.ExitException e) {
+        } catch (ShapeClassifierBasisPath.ExitException e) {
             assertThat(e.status, is(1)); // <== this fails on purpose
         } finally {
             System.setSecurityManager(initialSecurityManger);
@@ -103,7 +103,7 @@ public class ShapeClassifierBasisPath {
         @Override
         public void checkExit(int status) {
             super.checkExit(status);
-            throw new ShapeClassifierTest.ExitException(status);
+            throw new ShapeClassifierBasisPath.ExitException(status);
         }
     }
 }
