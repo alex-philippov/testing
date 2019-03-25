@@ -64,35 +64,35 @@ public class ShapeClassifier {
 			isShapeGuessCorrect = false;//23
 		// check the size guess
 		if (calcPerim > 200 && sizeGuess.equals("Large")) {//24
-			isSizeGuessCorrect = true;//26
+			isSizeGuessCorrect = true;//25
 		}
-		else if (calcPerim < 10 && sizeGuess.equals("Small")) {//25
-			isSizeGuessCorrect = true;//26
-		}
-		else {
-			isSizeGuessCorrect = false;//27
-		}
-		if ( 0 == (calcPerim % 2) && evenOddGuess.equals("Yes")) {//28
-			isEvenOddCorrect = true;//30
-		}
-		else if ( 0 != (calcPerim % 2) && evenOddGuess.equals("No")) {//29
-			isEvenOddCorrect = true;//30
+		else if (calcPerim < 10 && sizeGuess.equals("Small")) {//26
+			isSizeGuessCorrect = true;//27
 		}
 		else {
-			isEvenOddCorrect = false;//31
+			isSizeGuessCorrect = false;//28
 		}
-		if (isShapeGuessCorrect && isSizeGuessCorrect && isEvenOddCorrect) {//32
-			badGuesses=0;
-			return "Yes";//33
+		if ( 0 == (calcPerim % 2) && evenOddGuess.equals("Yes")) {//29
+			isEvenOddCorrect = true;//30
+		}
+		else if ( 0 != (calcPerim % 2) && evenOddGuess.equals("No")) {//31
+			isEvenOddCorrect = true;//32
+		}
+		else {
+			isEvenOddCorrect = false;//33
+		}
+		if (isShapeGuessCorrect && isSizeGuessCorrect && isEvenOddCorrect) {//34
+			badGuesses=0;//35
+			return "Yes";
 		}
 		else {
 			// too many bad guesses
-			badGuesses++;//34
-			if (badGuesses >= 3) {//35
+			badGuesses++;//36
+			if (badGuesses >= 3) {//37
 				System.out.println("Bad guess limit Exceeded");
-				System.exit(1);//36
+				System.exit(1);//38
 			}
-			return "No";//37
+			return "No";//39
 		}
 	}
 

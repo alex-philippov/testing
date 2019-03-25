@@ -35,13 +35,13 @@ public class ShapeClassifierBasisPath {
 
         //assertEquals("Yes", shapeClassifier.evaluateGuess("Equilateral,Small,Yes,200,200,200")); // 10 -- infisible
 
-        assertEquals("Yes", shapeClassifier.evaluateGuess("Isosceles,Small,No,2,2,3")); // 11
+        assertEquals("Yes", shapeClassifier.evaluateGuess("Isosceles,Large,No,200,200,311")); // 11
 
         //assertEquals("Yes", shapeClassifier.evaluateGuess("Isosceles,Large,Yes,2,2,3")); // 12 --infisible
 
         //assertEquals("No", shapeClassifier.evaluateGuess("Isosceles,Large,Yes,2,2,3")); // 13 -- переделать - сложно тестировать
 
-        assertEquals("No", shapeClassifier.evaluateGuess("Isosceles,Large,Yes,2,2,3")); // 14
+        assertEquals("No", shapeClassifier.evaluateGuess("Isosceles,Large,Yes,200,200,311")); // 14
 
         SecurityManager initialSecurityManger = System.getSecurityManager();
         try {
